@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Решение квадратных уравнений</title>
+    <meta http-equiv="Content-Type" ; content="text/html; charset=utf-8" ;>
+    <link href="style.css" rel="stylesheet">
+    <script type="text/javascript" src="equation.js"></script>
+</head>
+<body bgcolor="#c0c0c0">
+<p class="imgCenter"><img src="equation.jpg"/></p>
+<h1>Введите коэффициенты квадратного уравнения:</h1>
+
+<form id="floatTip">
+    <p>Коэффициент <b>a</b>:
+        <input type="text" size="10" name="aparam" id="inpA" value="1"/>
+    </p>
+    <p>Коэффициент <b>b</b>:
+        <input type="text" size="10" name="bparam" id="inpB" value="4"/>
+    </p>
+    <p>Коэффициент <b>c</b>:
+        <input type="text" size="10" name="cparam" id="inpC" value="3"/>
+    </p>
+    <p class="imgCenter">
+        <input type="button" name="button" value="Посчитать" onclick="calculate('inpA', 'inpB', 'inpC')"/>
+    </p>
+    <p class="res"><b>Результат:</b></p>
+    <div id="myresult"><b>Здесь результат</b></div>
+</form>
+<br/>
+<table id="myTable" align="center" border="3" width="50%" bgcolor="white" cellspacing="0">
+    <caption><b>История расчетов</b></caption>
+    <tr>
+        <th>a</th>
+        <th>b</th>
+        <th>c</th>
+        <th>x1</th>
+        <th>x2</th>
+        <th></th>
+    </tr>
+    <tbody>
+
+    </tbody>
+</table>
+
+
+</body>
+</html>
